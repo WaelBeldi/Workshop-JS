@@ -26,7 +26,7 @@
 
 // // ************ COMPLEX TYPES
 // // ************ ARRAYS - Store multiple values in a variable
-// var numbers = [1, 2, 3, 4, 5];
+var numbers = [1, 2, 3, 4, 5];
 // var fruits = ['apples', 'oranges', 'pears', 'grapes'];
 // var hobbies = ["sleep", 33, true];
 
@@ -57,7 +57,7 @@
 // console.log(typeof addition);
 
 // // Call function
-// console.log(addition(2, 3));
+// console.log(addition(5, 2));
 // console.log(greet());
 
 /*---------------------------- String Concatenation ----------------------------*/
@@ -90,7 +90,7 @@
 // console.log("substring(0, 5):", val);
 
 // // Split into array
-// val = s.split("");
+// val = s.split(" ");
 // console.log("split(''):", val);
 
 // val = val.join(".");
@@ -160,6 +160,21 @@
 // console.log("Postfix increment (j++) :", j++);
 // console.log("j :", j);
 
+/*---------------------------- Comparison Operators ----------------------------*/
+// console.log("5 == 5 :", 5 == 5);
+// console.log("'5' == 5 :", '5' == 5);
+// console.log("5 != 10 :", 5 != 10);
+// console.log("'5' != 10 :", '5' != 10);
+// console.log("5 === 5 :", 5 === 5);
+// console.log("'5' === 5 :", '5' === 5);
+// console.log("5 !== 10 :", 5 !== 10);
+// console.log("'5' !== 10 ;", '5' !== 10);
+// console.log("5 !== 5 :", 5 !== 5);
+// console.log("5 <= 10 :", 5 <= 10);
+// console.log("10 < 5 :", 10 < 5);
+// console.log("5 >= 5 :", 5 >= 5);
+// console.log("10 > 5 :", 10 > 5);
+
 /*---------------------------- Object Literals ----------------------------*/
 // var person = {
 //   // an object is a collection of key-value pairs
@@ -172,7 +187,7 @@
 //     state: "over there",
 //   },
 // };
-// console.log("person :",person);
+// console.log("person :", person);
 
 // // Get single value (obj.key)
 // console.log("person.firstName :", person.firstName);
@@ -211,21 +226,6 @@
 // ];
 // console.log("console.log :", users)
 // console.table(users)
-
-/*---------------------------- Comparison Operators ----------------------------*/
-// console.log("5 == 5 :", 5 == 5);
-// console.log("'5' == 5 :", '5' == 5);
-// console.log("5 != 10 :", 5 != 10);
-// console.log("'5' != 10 :", '5' != 10);
-// console.log("5 === 5 :", 5 === 5);
-// console.log("'5' === 5 :", '5' === 5);
-// console.log("5 !== 10 :", 5 !== 10);
-// console.log("'5' !== 10 ;", '5' !== 10);
-// console.log("5 !== 5 :", 5 !== 5);
-// console.log("5 <= 10 :", 5 <= 10);
-// console.log("5 < 10 :", 5 < 10);
-// console.log("5 >= 5 :", 5 >= 5);
-// console.log("10 > 5 :", 10 > 5);
 
 /*---------------------------- Truthy & Falsy ----------------------------*/
 // console.log(
@@ -279,7 +279,7 @@
 // var i = 0;
 // while ( i < numbers.length ) {  // change condition to false to check
 //     sum += numbers[i]; // sum = sum + numbers[i]
-//     i += 1; // i = i + 1 // i++
+//     i++; //i += 1 // i = i + 1
 // }
 // console.log("While Loop sum:", sum)
 
@@ -289,8 +289,8 @@
 // var i = 0;
 // do {
 //   sum += numbers[i];
-//   i += 1;
-// } while (i < numbers.length);   // change condition to false to check
+//   i++;
+// } while (i > numbers.length);   // change condition to false to check
 // console.log("Do While Loop sum:", sum)
 
 /*---------------------------- Conditionals ----------------------------*/
@@ -300,24 +300,23 @@
 //   console.log("x is 10");
 // } else if (x > 10) {
 //   console.log("x is greater than 10");
-// } else {
+// } else if (x < 10) {
 //   console.log("x is less than 10");
+// } else {
+//   console.log("x is not a number");
 // }
 
 // // ***** Switch (/!\break)
-// var color = "green";
+// var color = "red";
 // switch (color) {
 //   case "red":
-//       return "color is red"
-//     // console.log("color is red");
+//     console.log("color is red");
 //     break;
 //   case "blue":
-//       return "color is blue"
-//     // console.log("color is blue");
+//     console.log("color is blue");
 //     break; // remove break and check result
 //   default:
-//       return "color is neither red nor blue"
-//     // console.log("color is neither red nor blue");
+//     console.log("color is neither red nor blue");
 // }
 
 // function testColor(color) {
@@ -331,4 +330,4 @@
 //   }
 // }
 
-// console.log(testColor("black"));
+// console.log(testColor("blue"));
